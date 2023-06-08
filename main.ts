@@ -1,6 +1,9 @@
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
-    for (let index = 0; index <= 4; index++) {
+    for (let index = 0; index <= 3; index++) {
+        led.plot(index, randint(0, 5))
+        led.plot(index, randint(0, 5))
+        led.plot(index, randint(0, 5))
         led.plot(index, randint(0, 5))
     }
 })
